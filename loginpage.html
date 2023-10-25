@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginstylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+   
+</head>
+<body>x 
+
+    <div class="container">
+        <!-- Left side (Login Container) -->
+        <div class="login-container">
+            <form id="login-form">
+                <h2 class="form-heading">SIGN IN</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="button" id="signinbtn" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Sign In if you already have an account" onclick="validateForm()">Sign in</button>
+                
+                <a href="#" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a>
+                <br><br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                <a href="javascript:void(0);" class="signup-link">Don't have an account? SIGN UP</a>
+           
+            </form>
+
+            <form id="signup-form" class="hidden">
+                <h2 class="form-heading">REGISTER</h2>
+                <div class="form-group">
+                    <label for="regEmail">Email:</label>
+                    <input type="email" class="form-control" id="regEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Password:</label>
+                    <input type="password" class="form-control" id="regPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <select class="form-control" id="location">
+                        <option value="New York">Brighton</option>
+                        <option value="Los Angeles">Downtown</option>
+                        <option value="Chicago">Jamaica Plain</option>
+                        <option value="Miami">Mission hill</option>
+                    </select>
+                </div>
+                <button type="button" id="registerbtn" class="btn btn-brown" data-toggle="tooltip" data-placement="bottom" title="Register" onclick="validateRegistrationForm()">Register</button>
+                <br><br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+                
+                <a href="javascript:void(0);" class="login-link">Already have an account? Sign in</a>
+            </form>
+
+
+        </div>
+        <!-- Right side (Images) -->
+        <div class="image-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="\images\loginimg1.jpeg" alt="Image 1" class="img-fluid image">
+                </div>
+                <div class="col-md-6">
+                    <img src="\images\loginimg2.jpeg" alt="Image 2" class="img-fluid image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="\images\loginimg3.jpeg" alt="Image 3" class="img-fluid image">
+                </div>
+                <div class="col-md-6">
+                    <img src="\images\loginimg4.jpeg" alt="Image 4" class="img-fluid image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Enter your email to reset your password:</p>
+                    <input type="email" class="form-control" id="forgotPasswordEmail" placeholder="Enter your email">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="signinbtn"class="btn btn-primary">Reset Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-content">
+        <!-- "Back to Home" link -->
+        <a href="dashboard.html" class="home-link">Back to Home</a>
+    </div>
+   
+ 
+    <script src="loginjavascript.js"></script>
+    <!-- Include Bootstrap JavaScript and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>

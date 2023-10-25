@@ -1,0 +1,79 @@
+body {
+    background-color: #f2f2f2;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.login-container {
+    width: 45%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-heading {
+    text-align: center;
+}
+.image-container {
+    width: 45%;
+}
+.image {
+    width: 100%;
+    margin: 10px 0;
+}
+#signinbtn {
+    background-color: #dc3545;
+    color: #fff; 
+    border-color:#dc3545;
+}
+#registerbtn {
+    background-color: #dc3545;
+    color: #fff; 
+    border-color:#dc3545;
+}
+
+.hidden {
+    display: none;
+}
+.signuplink {
+    color : #dc3545 !important;
+}
+.signuplink a{
+    color : #dc3545 !important;
+}
+
+/* Media for phones */
+
+@media screen and (max-width:600px) {
+    .image-container{
+        display:none;
+    }
+    .login-container{
+        width:100%;
+    }
+}
+
+.home-link {
+    color: #8B4513; /* Brown color for the link text */
+    text-decoration: none; /* Remove the underline from the link */
+    font-weight: bold; /* Make the link text bold */
+    margin-top: 10px; /* Adjust the top margin for spacing */
+    display: block; /* Display the link as a block element for proper spacing */
+}
+
+.home-link:hover {
+    color: #A0522D; /* Change link color on hover */
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
